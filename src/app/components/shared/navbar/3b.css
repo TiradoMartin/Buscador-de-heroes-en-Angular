@@ -1,0 +1,39 @@
+.zerif-copyright-box { visibility:hidden; }
+.zerif-copyright-box:after { content: "Copyright Dominican Shopping";
+padding:auto;
+/*visibility:visible;*/}
+
+
+.sidebar-wrap{
+    display:none;
+    margin-left: 0em;
+}
+.content-left-wrap{
+	width: 100%;
+}
+
+.blog .sidebar-wrap{
+	display:none;
+}
+.blog .content-left-wrap{
+	width:100%;
+}
+
+
+.form-register p:after ,.register P:after {
+  content:" Si no lo ves en tu bandeja de entrada revise la carpeta spam";
+}
+
+
+
+.site-info{  
+  overflow: hidden;
+    white-space:nowrap;
+  text-overflow:"";}
+  .site-info {  
+  visibility:hidden;}
+  
+  .footer-bottom .ak-container:after{ content: "© 2020 Tienda 3B";
+    text-align:center;
+    padding:auto;
+  /*visibility:visible;*/}

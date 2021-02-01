@@ -1,0 +1,18 @@
+
+<div class="container ">
+  <h1>{{heroe.nombre | uppercase }} <small></small></h1>
+  <hr>
+  <div class="card mb-5 animated fadeIn fast">
+    <div class=" row-cols-3"><img class="rounded mx-auto d-block card-img-top img-fluid" [src]="heroe.img" [alt]="heroe.nombre"></div>
+ <div class="card-body ">
+
+<h5>Biografia</h5>
+     <p class="card-text text-center">{{heroe.bio}}</p>
+     <div class="row">
+       <div class="col"> <h6 class="card-title"> Fecha de estreno {{heroe.aparicion}}</h6></div>
+
+ <img class=" img-fluid img-thumbnail img-size" *ngIf="heroe.casa=='Marvel'" src="assets/img/marvel-logo.png" alt="Marvel logo">
+ <img class=" img-fluid img-thumbnail img-size" *ngIf="heroe.casa=='DC'" src="assets/img/dc-logo.jpg" alt="DC logo">
+    </div>
+<a class="btn btn-outline-danger " [routerLink]="['/heroes']">Regresar </a>
+</div>
